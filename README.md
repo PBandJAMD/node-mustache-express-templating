@@ -185,9 +185,10 @@ const packageData = {
       }
     ]
 };
+
+module.exports = packageData;
 ```
 
-Make sure at the bottom of this file to use `module.exports` to send out the entire object when we require it in another file.
 
 Let's add the following code to our app.js file.
 
