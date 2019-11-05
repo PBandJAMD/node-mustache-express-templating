@@ -40,7 +40,7 @@ Let's start coding in `app.js`:
 
 const express = require('express');
 const app     = express();
-const port    = process.env.PORT || 8080;
+const port    = process.env.PORT || 8000;
 
 app.listen(port, () => {
   console.log(`Server started on ${port}`)
@@ -95,6 +95,7 @@ Again, we'll use Mustache, at least in the beginning, because the syntax has a g
 const express = require('express');
 const app = express();
 const mustacheExpress = require('mustache-express');
+const port = process.env.PORT || 8000;
 
 
 app.engine('html', mustacheExpress());
